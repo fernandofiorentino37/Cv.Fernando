@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV - Fernando Fiorentino</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent: #ff7b54;
+      --muted: #74839a;
+      --card-bg: rgba(255,255,255,0.9);
+    }
+    html,body{
+      height:100%;
+      font-family: 'Inter', 'Poppins', system-ui, sans-serif;
+      background: linear-gradient(135deg, #1b1b2f 0%, #162447 40%, #1f4068 100%);
+      color: #12202b;
+    }
+
+    /* soft patterned overlay */
+    body::before{
+      content: "";
+      position:fixed;
+      inset:0;
+      background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 20px 20px;
+      pointer-events:none;
+      z-index:0;
+      mix-blend-mode: overlay;
+    }
+
+    .cv-wrapper{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:3rem 1rem;
+    }
+
+    .cv-card{
+      width:100%;
+      max-width:1000px;
+      border-radius:18px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      overflow:hidden;
+      background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(245,245,245,0.92));
+      position:relative;
+      z-index:1;
+    }
+
+    .sidebar{
+      background: #0a1a3a;
+      padding:2rem;
+      min-height:100%;
+      color: #ffffff !important;
+    }
+
+    .profile-photo{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      object-fit:cover;
+      border:6px solid white;
+      box-shadow: 0 6px 18px rgba(11,35,70,0.25);
+    }
+
+    .name{
+      font-weight:700;
+      font-size:1.4rem;
+    }
+
+    .role{
+      color:var(--muted);
+      font-weight:600;
+      font-size:0.95rem;
+    }
+
+    .muted{
+      color: #d4d9e6 !important;
+      font-size:0.9rem;
+    }
+
+    .skill-badge{
+      display:inline-block;
+      margin:4px 6px 6px 0;
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(91,157,249,0.12);
+      font-weight:600;
+      font-size:0.85rem;
+    }
+
+    .section-title{
+      font-weight:700;
+      font-size:1.05rem;
+      margin-bottom:0.6rem;
+    }
+
+    .timeline-item{
+      margin-bottom:1rem;
+    }
+
+    /* responsive tweaks */
+    @media (max-width:767px){
+      .cv-card{border-radius:14px}
+      .sidebar{padding:1.5rem}
+    }
+    .cv-card main .muted{
+      color:#000000 !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-wrapper">
+    <div class="cv-card row g-0">
+      <!-- SIDEBAR -->
+      <aside class="col-md-4 sidebar d-flex flex-column align-items-center text-center">
+        <img src="foto.jpeg" alt="Foto" class="profile-photo mb-3">
+        <div class="name">Fernando Fiorentino</div>
+        <div class="role mb-2">Mahasiswa Sistem Informasi (Semester 3)</div>
+        <p class="muted small">Tangerang, Indonesia</p>
+
+        <hr class="w-100 my-3">
+
+        <div class="w-100 text-start">
+          <div class="section-title">Kontak</div>
+          <p class="small mb-1"><i class="bi bi-envelope-fill me-2"></i><a style="color:#ffffff;" href="mailto:fernandofiorentino37@gmail.com">fernandofiorentino37@gmail.com</a></p>
+          <p class="small mb-1"><i class="bi bi-telephone-fill me-2"></i><a style="color:#ffffff;" href="tel:+6282312376920">0823 1237 6920</a></p>
+          <p class="small mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Tangerang, Indonesia</p>
+
+          <hr class="w-100 my-3">
+
+          <div class="section-title">Keahlian</div>
+          <div>
+            <span class="skill-badge">Fotografi</span>
+            <span class="skill-badge">MS Word</span>
+            <span class="skill-badge">MS Excel</span>
+            <span class="skill-badge">MS PowerPoint</span>
+            <span class="skill-badge">Python</span>
+          </div>
+
+          <hr class="w-100 my-3">
+
+          <div class="section-title">Bahasa</div>
+          <p class="small mb-1">Bahasa Indonesia</p>
+        </div>
+
+        <div class="mt-auto w-100 text-center">
+          <a style="color:#ffffff;" href="CV-Fernando-Fiorentino.pdf" download class="btn btn-outline-primary btn-sm mt-3 w-100">Unduh CV (PDF)</a>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="col-md-8 p-4 p-md-5">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <h1 class="h4 mb-1">Profil Singkat</h1>
+            <p class="muted">Saya mahasiswa S1 Sistem Informasi di Universitas Budi Luhur (Semester 3). Aktif dalam proyek kampus, fotografi, dan sedang mengembangkan kemampuan pemrograman Python serta mengoperasikan Microsoft Office.</p>
+            <ul class="list-unstyled small muted mb-0">
+              <li><strong>Nama:</strong> Fernando Fiorentino</li>
+              <li><strong>Umur:</strong> 19</li>
+              <li><strong>Tanggal lahir:</strong> 17 Juni 2006</li>
+              <li><strong>Tempat lahir:</strong> Tangerang, Indonesia</li>
+            </ul>
+          </div>
+          <div class="text-end muted small">Mahasiswa Semester 3 • Universitas Budi Luhur</div>
+        </div>
+
+
+        <hr>
+
+        <section class="mb-4">
+  <div class="section-title">Pengalaman</div>
+  <div class="timeline-item">
+    <p class="small mb-0 mt-2">Saya belum memiliki pengalaman kerja formal. Namun, saya aktif belajar, mengikuti proyek kecil, dan mengembangkan kemampuan di bidang teknologi informasi.</p>
+  </div>
+</section>
+
+<section class="mb-4">
+          <div class="section-title">Pendidikan</div>
+          <div class="timeline-item">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>S1 Sistem Informasi</strong>
+                <div class="muted">Universitas Budi Luhur</div>
+              </div>
+              <div class="muted small">2024 — Sekarang (Semester 3)</div>
+            </div>
+            <p class="small mb-0 mt-2">Aktif mengikuti mata kuliah pemrograman, basis data, dan proyek kampus.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="d-flex justify-content-between">
+              <div>
+                <strong>SMA</strong>
+                <div class="muted">Yadika 3</div>
+              </div>
+              <div class="muted small">2021 — 2024</div>
+            </div>
+            <p class="small mb-0 mt-2">Lulus tahun 2024.</p>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-title">Proyek Pilihan</div>
+          <div class="row">
+            <div class="col-sm-6 mb-3">
+              <div class="p-3" style="background:rgba(11,35,70,0.03);border-radius:10px;">
+                <strong>Website E-commerce</strong>
+                <div class="muted small">React • Bootstrap • Node.js</div>
+                <p class="small mb-0 mt-2">Mendesain ulang halaman produk dan meningkatkan waktu muat halaman.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 mb-3">
+              <div class="p-3" style="background:rgba(11,35,70,0.03);border-radius:10px;">
+                <strong>Dashboard Analitik</strong>
+                <div class="muted small">Vue • Chart.js</div>
+                <p class="small mb-0 mt-2">Membuat komponen ulang untuk visualisasi data real-time.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr>
+
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="muted small">Referensi tersedia atas permintaan</div>
+          <div>
+            <a style="color:#ffffff;" href="mailto:fernandofiorentino37@gmail.com" class="btn btn-primary btn-sm">Hubungi Saya</a>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
